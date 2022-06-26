@@ -35,7 +35,7 @@ class _AddNotePageState extends State<AddNotePage> {
           padding: const EdgeInsets.fromLTRB(20, 100, 20, 0),
           child: Form(
               key: _formKey,
-              child: Column(
+              child: ListView(
                 children: [
                   Align(
                       alignment: Alignment.centerLeft,

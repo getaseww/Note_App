@@ -12,17 +12,6 @@ class NoteModel extends Equatable {
     required this.status,
   });
 
-  NoteModel copyWith({
-    String? title,
-    String? body,
-    Status? status,
-  }) {
-    return NoteModel(
-        title: title ?? this.title,
-        body: body ?? this.body,
-        status: status ?? this.status);
-  }
-
   factory NoteModel.fromJson(Map<String, dynamic> json) {
     return NoteModel(
         title: json['title'], body: json['body'], status: json['status']);

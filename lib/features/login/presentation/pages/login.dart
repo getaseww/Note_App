@@ -17,7 +17,7 @@ class _LoginPageState extends State<LoginPage> {
       key: loginScreenKey,
       body: Padding(
         padding: const EdgeInsets.fromLTRB(25, 100, 25, 0),
-        child: Column(children: [
+        child: ListView(children: [
           const Text(
             "LOGIN",
             style: TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
